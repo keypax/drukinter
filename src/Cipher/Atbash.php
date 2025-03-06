@@ -20,10 +20,16 @@ class Atbash implements CiphersContract
         }, $input);
     }
 
+    /**
+     * Encrypt the provided plaintext to Atbash cipher.
+     */
     public function encrypt(string $input): string{
         return $this->transform($input);
     }
 
+    /**
+     * Decrypt the provided Atbash cipher back to plaintext.
+     */
     public function decrypt(string $input): string{
         return $this->transform($input);
     }
